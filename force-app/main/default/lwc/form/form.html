@@ -1,0 +1,30 @@
+<!--
+  @description       : 
+  @author            : VIKASH MUNDARI
+  @group             : 
+  @last modified on  : 06-20-2024
+  @last modified by  : VIKASH MUNDARI
+-->
+<template>
+    <lightning-card title="Record Edit Form with Tooltip" class="form-card">
+        <div class="slds-p-around_medium">
+            <lightning-record-edit-form object-api-name="Account">
+                <lightning-messages></lightning-messages>
+                
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label">
+                        <span class="label-text">Account Name</span>
+                        <lightning-icon icon-name="utility:info" size="x-small" class="slds-m-left_xx-small info-icon"
+                            title={tooltipText} onmouseover={showTooltip} onmouseout={hideTooltip}></lightning-icon>
+                    </label>
+                    <!-- <div class={tooltipClass}>{tooltipText}</div> -->
+                    <div class="slds-form-element__control">
+                        <lightning-input-field field-name="Name"></lightning-input-field>
+                    </div>
+                </div>
+
+                <lightning-button class="slds-m-top_small" variant="brand" type="submit" name="update" label="Save"></lightning-button>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>
