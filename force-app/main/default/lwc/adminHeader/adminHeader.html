@@ -1,0 +1,39 @@
+<template>
+    <header class="slds-global-header_container">
+        <div class="slds-grid slds-grid_align-spread slds-wrap">
+            <!-- Logo and Title -->
+            <div class="slds-global-header__item slds-grid slds-align_absolute-center">
+                <img src={logoUrl} alt="Company Logo" class="global-header__logo" />
+                <!-- <h1 class="slds-text-heading_large slds-m-left_small">Indian Air Force</h1> -->
+            </div>
+            <!-- Search Bar -->
+            <div class="slds-global-header__item slds-global-header__item_search">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <input type="text" id="search" class="slds-input" placeholder="Search..."/>
+                    </div>
+                </div>
+            </div>
+            <!-- Utility Icons -->
+            <div class="slds-global-header__item slds-grid slds-align_absolute-center">
+                <ul class="slds-grid slds-list_horizontal">
+                    <li class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container" title="User">
+                            <lightning-icon icon-name="utility:user" size="small"></lightning-icon>
+                        </button>
+                    </li>
+                    <li class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container" title="Settings">
+                            <lightning-icon icon-name="utility:settings" size="small"></lightning-icon>
+                        </button>
+                    </li>
+                    <li class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-container" title="Notifications">
+                            <lightning-icon icon-name="utility:notification" size="small"></lightning-icon>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</template>

@@ -1,0 +1,39 @@
+.custom-navbar {
+    background-color: #5D8AA8;
+    width: 250px;
+    height: 80%;
+    top: 15%;
+    position: fixed;
+    border-right: 1px solid lightblue;
+    overflow-y: auto; /* Add scrolling for overflow content */
+}
+
+.custom-nav-section {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.custom-nav-item {
+    display: block;
+}
+
+.custom-nav-item.active {
+    background-color: #0070d2; /* Highlight active item */
+}
+
+.custom-nav-link {
+    font-size: larger;
+    display: block;
+    padding: 10px 15px;
+    color: black /* Dark color for good contrast */
+}
+
+.custom-nav-item.active .custom-nav-link {
+    color: #ffffff; /* White text for active item */
+}
+
+.custom-nav-item:hover .custom-nav-link {
+    background-color: #0070d2; /* Highlight color on hover */
+    color: black; /* Ensure text is visible on hover */
+}
